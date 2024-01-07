@@ -69,9 +69,11 @@ function hd_tbody_td($num,$name){
 
 
 
+$username = "boinplanning@gmail.com";
+$password = "ATATT3xFfGF07xWDfeB18MJNOp8xvsFwOgE9_5cGWF5hkFsxEqnsw5HcrrmoapwxWOjybyy-9oGcxNzKXrSc1Q5S6s0-Z_K1SIQrURHxPO7ytkn51XydbjWyOLlFnYDlsJuMKSFottuZ-aVG4W7lOm9ohSCAAr0WCoAm-H0_gx8awNV59pFvK8s=B60FF3E2";
 
 
-function cute_jy_curl($username,$password,$url){
+function cute_hh_curl($username,$password,$url){
 
 	$curl = curl_init();
 	curl_setopt($curl, CURLOPT_USERPWD, "$username:$password");
@@ -94,7 +96,7 @@ function cute_jy_work_kind($comments){
 }
 
 
-function sub_cute_jy_curl($username,$password,$url){
+function sub_cute_hh_curl($username,$password,$url){
 
 	$sub_curl = curl_init();
 	curl_setopt($sub_curl, CURLOPT_USERPWD, "$username:$password");

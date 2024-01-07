@@ -3,27 +3,19 @@ include_once('../lib/session.php');
 include_once('../lib/dbcon_BOIN_PLANNING.php');
 
 include_once('../contents_header.php');
-include_once('../contents_profile.php');
-include_once('../contents_sidebar.php');
+//include_once('../contents_profile.php');
+//include_once('../contents_sidebar.php');
 
 
 
 
 
 
+$url = 'https://boinplanning.atlassian.net/rest/api/latest/search';
+$ress = cute_hh_curl($username,$password,$url);
 
 
 
-
-$sql	 = "select * from jirasync_update order by jirasync_update_idx DESC Limit 1	";
-$res	=  mysqli_query($real_sock,$sql) or die(mysqli_error($real_sock));
-$info	 = mysqli_fetch_array($res);
-
-
-$url = "https://mz-dev.atlassian.net/rest/api/latest/search?jql=updated>=".$info['jirasync_update_date']."&fields=key&maxResults=10000";
-
-
-$ress=cute_jy_curl($username,$password,$url);
 
 
 ?>
@@ -49,9 +41,6 @@ $ress=cute_jy_curl($username,$password,$url);
 					<?php
 						echo "총 동기화 할 지라 갯수 : ".$ress['total']."<p>";
 					?>
-					동기화 시작일자 :  	<?php echo $info['jirasync_update_date']	?><br>
-					
-					마지막 동기화 일자 : 	<?php echo $info['jirasync_update_datetime']	?>
 					<p>	<br>	
 
 					<a href="jira_update_main_step1.php" class="btn btn-success login-btn">지라 동기화</a>
