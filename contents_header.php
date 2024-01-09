@@ -18,6 +18,29 @@ if(!$_SESSION['admin_lv']){
 <link href="/BOIN_PLANNING/css/bootstrap.min.css" rel="stylesheet">
 
 <link href="/BOIN_PLANNING/css/datepicker3.css" rel="stylesheet">
+<link href="/BOIN_PLANNING/css/cdml.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
+
+
+
+<link rel="stylesheet" type="text/css" href="assets/cdml.css">
+
+<script type="text/x-mathjax-config">
+
+  MathJax.Hub.Config({
+  
+    tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+  
+  });
+  
+  </script>
+  
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+</style>
+
+
+
 <link href="/BOIN_PLANNING/css/styles.css" rel="stylesheet">
 
 

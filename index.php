@@ -53,7 +53,7 @@
 		<div class="row">
 						<h2>
 						<form name="frm" role="form" method="get" action="index_proc.php">
-								<?php     echo '현재 PHP 버전: ' . phpversion();?>
+								
 								<h5><br>id : yoonhd <br>			pw : asdf1020<br>								</h5>
 							   <input class="form-control" placeholder="아이디를 입력 하세요" name="admin_id">
 						       <input class="form-control" type='password' placeholder="비밀번호를 입력하세요" name="admin_pw">

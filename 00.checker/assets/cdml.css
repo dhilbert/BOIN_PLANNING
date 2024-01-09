@@ -1,0 +1,562 @@
+
+@media (max-width: 764px){
+    div.cdml_question * {
+        margin: 0;
+        padding: 0;
+        font-size: 15px !important;
+    }
+    div.geno_list {
+        max-width: 20px;
+    }
+    button.ten_create {
+        width: 100%;
+    }
+    div.btn_row {
+        text-align: center;
+    }
+    div.step3 {
+        display: none;
+    }
+}
+@media (max-width: 5000px){
+    div.btn_row {
+        text-align: center;
+    }
+}
+
+div.geno_list {
+    max-width: 20px;
+}
+
+/* description */
+p.cdml_desc {
+    font-weight: bold;
+    font-size: 15px;
+    padding: 0 20px;
+    margin: 0 0 15px 0;
+    color: blue;
+}
+
+/* empty line */
+p.cdml_eline {
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+/* question css global setting */
+div.cdml_question * {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+div.cdml_question p {
+    margin: 0;
+    padding: 0 0 1px 0;
+    font-size: 16px;
+}
+
+div.font-weight-black{
+    font-size: 22px;
+}
+/* 覯��� �壱�� ��鍵 */
+span.v-btn__content {
+    font-size: 15px;
+}
+/* ���� 覈��� ���� ����覃��伎�� */
+.bounce-enter-active {
+    animation: bounce-in .5s;
+}
+.bounce-leave-active {
+    animation: bounce-in .5s reverse;
+}
+/* ����讌� 覩碁Μ覲願鍵 MathJax font size */
+div#stem * {
+        font-size: 20px;
+}
+div#answer * {
+        font-size: 20px;
+}
+
+div#capture1 * {
+	font-size: 20px;
+}
+div#capture2 * {
+	font-size: 20px;
+}
+div.v-overlay__content{
+	width: 100%;
+}
+
+/* div.cdml_question	                               {display:inline-block;width:100%;} */
+div.cdml_question {
+    padding: 0;
+    display: inline-block;
+    width: 100%;
+}
+
+div.cdml_question ul,
+ol,
+li {
+    list-style: none;
+}
+
+/* p * ��覓語�� table��讓曙�� MathML�� ���レ�� 覦�����. 
+div.cdml_question td *, div *, li *, span *, p * {vertical-align: middle;} */
+div.cdml_question img {
+    border: none;
+    vertical-align: top;
+    border: 0px;
+}
+
+/* question structure css */
+div.cdml_question .question_box {
+    margin: 10px 0 3px 0;
+    padding: 0;
+}
+
+div.cdml_question .list_box {
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
+/*div.cdml_question .sentence_title	   {margin:10px 0 3px 0; padding: 0; font-weight:bold; font-size:13px; } */
+div.cdml_question .sentence_title {
+    margin: 10px 0 3px 0;
+    padding: 0;
+    font-size: 13px;
+}
+
+div.cdml_question .sentence_box {
+    margin: 0 0 10px 0;
+    padding: 10px;
+    border: 1px solid #999;
+}
+
+
+/* border-collapse:collapse; 蟆轟�讌� border螳� 讌���蟆� ���る�� 蟆��� 覦���� */
+/* border: 1px solid white;�� �� ���煙�朱� �誤�伎�� Explorer���� Border螳� ���殊��� 蟆��� 覦����, ��讌�襷� 讌�蠍��� ������ 蟆��� 襷��� 蟆� 螳���. */
+/* div.cdml_question table   { border-spacing:0px; border:0; border-collapse:collapse;border: 1px solid white; } */
+div.cdml_question table {
+    border-spacing: 0px;
+    border: 0;
+    border-collapse: collapse;
+}
+
+/* div.cdml_question table, th, td {border: 1px solid white;}  Exploer 覯�蠏� 蟆轟��� �殊�語�� ���伎� */
+div.cdml_question td {
+    padding: 0;
+}
+
+div.cdml_question table td.slash {
+    background: linear-gradient(to right bottom, transparent 0%, transparent 49.9%, #000000 50%, #000000 51%, transparent 51.1%, transparent 100%);
+}
+
+div.cdml_question table td.backslash {
+    background: linear-gradient(to right top, transparent 0%, transparent 49.9%, #000000 50%, #000000 51%, transparent 51.1%, transparent 100%);
+}
+
+/* no: 覓語�� 覯���, point ���� */
+/* div.cdml_question .no		  { font-size:1.1em; font-weight:bold; display:inline-block; margin:-5px 0 0 0; width: auto;} */
+div.cdml_question .no {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: -5px 0 0 0;
+    width: auto;
+}
+
+div.cdml_question .point {
+    width: 100%;
+    display: inline-block;
+    text-align: right;
+    width: auto;
+}
+
+/* q_img: question image */
+/* ie7������ table���� �企�讌��� ������讌� ���� */
+div.cdml_question .q_img {
+    text-align: center;
+    margin: 20px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+div.cdml_question img {
+    width: 50%;
+}
+
+/* tbox:title box, mt:main title */
+div.cdml_question div.tbox {
+    width: 95%;
+    padding: 10px 10px 7px;
+    border: 1px solid #999;
+    display: inline-block;
+    position: relative;
+    margin: 20px 0;
+    line-height: 180%;
+}
+
+div.cdml_question div.tbox p.mt {
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+div.cdml_question div.tbox p.mt span {
+    display: inline-block;
+    padding: 0 10px;
+    background: #fff;
+}
+
+/* Bunch */
+div.cdml_question div.bunch {
+    background: url("img/bunch_line.gif") 10px 0 repeat-y;
+}
+
+div.cdml_question div.bunch_top {
+    position: relative;
+    background: url("img/bunch_top.gif") 1px 0 no-repeat;
+}
+
+/* display:inline-block; } */
+div.cdml_question div.bunch_bottom {
+    padding: 0 0 0 30px;
+    background: url("img/bunch_bottom.gif") 1px 100% no-repeat;
+}
+
+/* list */
+div.cdml_question .l1 {
+    background: url("/assets/img/list1.gif") 0 3px no-repeat;
+    padding-left: 17px;
+}
+
+div.cdml_question .l2 {
+    background: url("/assets/img/list2.gif") 0 3px no-repeat;
+    padding-left: 17px;
+}
+
+div.cdml_question .l3 {
+    background: url("/assets/img/list3.gif") 0 3px no-repeat;
+    padding-left: 17px;
+}
+
+div.cdml_question .l4 {
+    background: url("/assets/img/list4.gif") 0 3px no-repeat;
+    padding-left: 17px;
+}
+
+div.cdml_question .l5 {
+    background: url("/assets/img/list5.gif") 0 3px no-repeat;
+    padding-left: 17px;
+}
+
+/* jy 
+.cdml_question .l1:active,
+.cdml_question .l2:active,
+.cdml_question .l3:active,
+.cdml_question .l4:active,
+.cdml_question .l5:active {
+	left: 1px;
+	top: 1px;
+}
+.cdml_question .l1,
+.cdml_question .l2, 
+.cdml_question .l3, 
+.cdml_question .l4, 
+.cdml_question .l5 {
+    cursor: pointer;
+    position: relative;
+}
+*/
+
+/* list layout : ���願� 螳�讌� ���朱� �殊�碁�襦� ���誤�伎�狩�� MathML�� ����讌��� ���� */
+div.cdml_question ul.list_11111 {
+    width: 100%;
+}
+
+/* scahn div.cdml_question ul.list_11111 li		  { padding-bottom:6px; } */
+div.cdml_question ul.list_11111 li {
+    text-indent: -15px;
+    /* position: relative; */
+    /* background-color: #f0f0f0; */
+    margin-bottom: 4px;
+    padding: 0 0 0 15px;
+    /* padding-left: 30px;
+	border-radius: 3px;
+	/* border: 2px solid #f0f0f0; */
+}
+
+div.cdml_question ul.list_11111 li span {
+    /*display:inline-block;*/
+}
+
+div.cdml_question ul.list_5 {
+    width: 100%;
+    display: inline-block;
+}
+
+div.cdml_question ul.list_5 li {
+    width: 19.9%;
+    float: left;
+}
+
+div.cdml_question ul.list_5 li span {
+    display: inline-block;
+}
+
+
+div.cdml_question ul.list_221 {
+    width: 100%;
+    display: inline-block;
+    margin: 2px 0 2px 0;
+}
+
+div.cdml_question ul.list_221 li {
+    width: 49.9%;
+    float: left;
+}
+
+div.cdml_question ul.list_221 li span {
+    display: inline-block;
+}
+
+div.cdml_question ul.list_32 {
+    width: 100%;
+    display: inline-block;
+    margin: 2px 0 2px 0;
+}
+
+div.cdml_question ul.list_32 li {
+    width: 33%;
+    float: left;
+}
+
+div.cdml_question ul.list_32 li span {
+    display: inline-block;
+}
+
+/* span ���� */
+div.cdml_question .super {
+    font-size: 11px;
+    vertical-align: 5px;
+}
+
+div.cdml_question .sub {
+    font-size: 11px;
+    vertical-align: -5px;
+}
+
+div.cdml_question .big {
+    font-size: 1.29em;
+}
+
+div.cdml_question .small {
+    font-size: 0.9em
+}
+
+div.cdml_question .la {
+    text-align: left;
+}
+
+div.cdml_question .ca {
+    text-align: center;
+}
+
+div.cdml_question .ra {
+    text-align: right;
+}
+
+div.cdml_question .fl {
+    float: left;
+}
+
+div.cdml_question .fr {
+    float: right;
+}
+
+div.cdml_question .b {
+    font-weight: bold;
+}
+
+div.cdml_question .u {
+    text-decoration: underline;
+}
+
+div.cdml_question .i {
+    font-style: italic;
+}
+
+div.cdml_question .c {
+    text-decoration: line-through;
+}
+
+/* box */
+div.cdml_question span.box {
+    display: inline-block;
+    border: 1px solid #000;
+    padding: 0 4px;
+    text-indent: 0px;
+}
+
+
+
+/* Engine 豢��� : Default�� 豢��ロ��讌� ���� */
+/* background-color: #fddfc7 */
+/* border-top: 1px solid black; border-bottom: 1px solid black;
+   border-right: 1px solid black ;border-left: 1px solid black; */
+/* border: 0px 0px 0px 0px; <= default */
+/* margin: 0px 0px 0px 0px; <= default */
+/* padding:0px 0px 0px 0px; <= default */
+
+.ccctex {
+    display: inline-block;
+}
+
+.MathJax:focus,
+.mjx-chtml:focus,
+.MathJax_SVG:focus {
+    outline: 0px solid gray;
+}
+
+/* div.cdml_question .cc-tex-box {  because of inside mathjax*/
+
+/*
+.cc-tex-box {
+    border: 1px dotted grey !important;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 12pt;
+    display:inline-block;
+}
+*/
+
+/*���旧���ル���*/
+div.cdml_question .cc-input {
+    background-color: transparent !important;
+    /*background-color: white !important;*/
+    /* border: 0; */
+    border: 1px dotted #000;
+    /* vertical-align: middle !important; */
+    text-align: center !important;
+    /* width: 100%; */
+    height: 100%;
+    margin-left: 1px;
+}
+
+div.cdml_question .cc-circle-box {
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+}
+
+div.cdml_question .cc-container {
+    position: relative;
+    display: inline-block;
+    margin: 1px !important;
+    text-indent: 0 !important;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+div.cdml_question .cc-component {
+    position: absolute;
+    /* border: 1px dotted transparent; */
+    background-color: transparent !important;
+    vertical-align: middle;
+}
+
+/*���旧���� ����覦���*/
+#cdml_divlegend {
+    border: 1px solid rgb(85, 85, 85);
+    z-index: 1000 !important;
+    max-width: 90%;
+}
+
+.divlegendtitle {
+    padding-left: 2px;
+    color: #fff;
+    background-color: rgb(85, 85, 85);
+    height: 22px;
+    line-height: 22px;
+}
+
+.divlegendclose {
+    cursor: pointer;
+    float: right;
+    margin-top: 4px;
+    margin-right: 2px;
+    width: 13px;
+    height: 14px;
+    background-image: url('/cdml/img/legendclose.png');
+}
+
+.divlegendlist {
+    background-color: #fff;
+    text-align: center;
+    padding-bottom: 3px;
+    padding-right: 3px;
+}
+
+.divlegenditem {
+    margin-top: 3px;
+    margin-left: 3px;
+    display: inline-block;
+    min-height: 35px;
+    line-height: 35px;
+    padding-left: 13px;
+    padding-right: 13px;
+    border: 1px dotted rgb(85, 85, 85);
+    cursor: pointer;
+    font-size: 12pt;
+}
+
+.divlegenditem:hover {
+    background-color: #fcc;
+}
+
+
+/* scahn  
+div.cdml_question .small
+{
+	position: relative;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+}
+div.cdml_question .small img{
+	display:block;
+}
+*/
+
+/* jy ��蠏碁Μ蠍� 20180602 */
+div.cdml_question #pnc_lines img {
+    border: 0px;
+    vertical-align: middle;
+    display: block;
+}
+
+/*jy 螳�蟯���  豌危��*/
+div.cdml_question .option {
+    position: relative;
+}
+
+div.cdml_question .checked .checker {
+    position: absolute;
+    top: -5px;
+    left: -3px;
+    width: 25px;
+    height: 25px;
+    background: url(img/check.png) 0 0 no-repeat;
+    background-size: 25px 25px;
+}
+
+.ccapi_scoring_div .cdml_scoring {
+    position: absolute;
+    z-index: 9999;
+    width: 60px;
+    height: 81px;
+    background-size: 130px 81px;
+    vertical-align: middle;
+}
