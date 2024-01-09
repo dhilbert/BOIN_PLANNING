@@ -65,9 +65,6 @@ function hd_drop($num,$grobal,$sub_name,$sub_url){
 							);
 			
 			
-			$sub_url	= array("#","#","#"
-		
-		);
 
 			hd_drop($num,$grobal,$sub_name,$sub_url);
 
