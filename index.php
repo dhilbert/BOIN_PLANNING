@@ -17,7 +17,7 @@
 							
 							<span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand" href="index.php"><span>MZ_DSG</span> 관리자 페이지</a>
+						<a class="navbar-brand" href="index.php"><span>BOIN</span> 기획팀</a>
 					</div>
 				
 				</div>
@@ -54,7 +54,12 @@
 						<h2>
 						<form name="frm" role="form" method="get" action="index_proc.php">
 								
-								<h5><br>id : yoonhd <br>			pw : asdf1020<br>								</h5>
+								<h5>ID<br>조현희 : hhjo / 지선영:syji / 김수진 : kimkong5121		</h5>
+								<h5>PW 공통<br>1234
+	</h5>
+								
+
+
 							   <input class="form-control" placeholder="아이디를 입력 하세요" name="admin_id">
 						       <input class="form-control" type='password' placeholder="비밀번호를 입력하세요" name="admin_pw">
 

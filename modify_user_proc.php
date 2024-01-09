@@ -59,7 +59,7 @@ include_once('lib/dbcon_BOIN_PLANNING.php');
 		
 		$sql	 = "
 			update admin_member set 
-				admin_id = '".$update_admin_id."',
+			
 				admin_name = '".$update_admin_name."',
 				admin_pw = '".md5($update_admin_pw)."'
 			where admin_idx = '".$update_idx."'	

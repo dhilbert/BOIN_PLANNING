@@ -60,7 +60,7 @@
 						
 						
 						<label>아이디</label>
-							<input class='form-control' placeholder='이름를 입력하세요' name = 'admin_id'	value='<?php echo $info['admin_id']?>'	style='background-color:'>
+							<input class='form-control' placeholder='이름를 입력하세요' name = 'admin_id'	value='<?php echo $info['admin_id']?>'	style='background-color:' disabled>
 						
 						<label>이름</label>
 							<input class='form-control'  placeholder='이름' name = 'admin_name'	value='<?php echo $info['admin_name']?>'	style='background-color:'>
