@@ -73,7 +73,7 @@ include_once('../contents_sidebar.php');
 								$total = 0;
 								for($i = 0 ; $i < count($object) ; $i++){
 									$temp_list =	$object[$i] ;
-									$total+=1;
+									$total+=1;$num=0;
 									echo "<tr>";
 										$name = $total ;hd_tbody_td($num,$name);$num+=1;
 										$name = "<a href='detail_0.php?idx=".$i."'>".$temp_list['body_html']."</a>" ;	hd_tbody_td($num,$name);$num+=1;
