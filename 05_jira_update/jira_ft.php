@@ -5,7 +5,7 @@
 
 
 
-$ress = cute_hh_curl($username,$password,$url);
+$ress = cute_es_curl($username,$password,$url);
 
 $key = $ress['key']? $ress['key'] : null;
 if(isset($ress['fields']['labels'][0])){
@@ -59,21 +59,21 @@ $project =$ress['fields']['project']['name'] ;## 프로젝트
 $key = $ress['key'];
 
 $Main_sql	 = "insert jira_main set 
-					jira_key = '".cute_hh_string($key)."',
-					labels = '".cute_hh_string($labels)."',
-					priority = '".cute_hh_string($priority)."',
-					assignee = '".cute_hh_string($assignee)."',
-					jira_status = '".cute_hh_string($status)."',
-					creator = '".cute_hh_string($creator)."',
-					reporter = '".cute_hh_string($reporter)."',
-					project ='".cute_hh_string($project)."',
-					remainingEstimateSeconds ='".cute_hh_string($remainingEstimateSeconds)."',
-					timeSpentSeconds ='".cute_hh_string($timeSpentSeconds)."',
-					summay ='".cute_hh_string($summay)."',
-					jira_description='".cute_hh_string($description)."',
-					duedate='".cute_hh_string($duedate)."',
-					ustomfield_10015='".cute_hh_string($customfield_10015)."',
-					updated='".cute_hh_string($updated)."';";
+					jira_key = '".cute_es_string($key)."',
+					labels = '".cute_es_string($labels)."',
+					priority = '".cute_es_string($priority)."',
+					assignee = '".cute_es_string($assignee)."',
+					jira_status = '".cute_es_string($status)."',
+					creator = '".cute_es_string($creator)."',
+					reporter = '".cute_es_string($reporter)."',
+					project ='".cute_es_string($project)."',
+					remainingEstimateSeconds ='".cute_es_string($remainingEstimateSeconds)."',
+					timeSpentSeconds ='".cute_es_string($timeSpentSeconds)."',
+					summay ='".cute_es_string($summay)."',
+					jira_description='".cute_es_string($description)."',
+					duedate='".cute_es_string($duedate)."',
+					ustomfield_10015='".cute_es_string($customfield_10015)."',
+					updated='".cute_es_string($updated)."';";
 
 $Main_res	=  mysqli_query($real_sock,$Main_sql) or die(mysqli_error($real_sock));
 
@@ -88,7 +88,7 @@ for($i = 0 ; $i <count($worklogs);$i++){
 	$temp = $worklogs[$i];
 	$author	=$temp['author']['displayName']; ##작성자
 	if(isset($temp['comment'])){	
-		$comment =$temp['comment'];##작업내용
+		$comment =cute_es_string($temp['comment']);##작업내용
 	}
 	else{
 		$comment ="작업내용 입력안함";
@@ -102,6 +102,7 @@ for($i = 0 ; $i <count($worklogs);$i++){
 if(count($worklogs)==0){}
 else{
 	$work_sql =substr($work_sql, 0, -1);
+	
 	$work_res	=  mysqli_query($real_sock,$work_sql) or die(mysqli_error($real_sock));
 }
 

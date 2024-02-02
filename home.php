@@ -68,7 +68,7 @@ include_once('contents_sidebar.php');
 					<div class="panel-heading">나의 프로젝트 진행상황</div>
 					<div class="panel-body">
 공사중, 지금은 전체, 나중엔 로그인 한 유저 위주로
-<p>※ 완료 기준은 jira_status = ' 완료됨 ' OR  ' close '
+<p>※ 완료 기준은 jira_status = ' close '
 <div id="piechart" style="width: 900px; height: 500px;"></div>
 
 <table data-toggle="table"   data-show-refresh="true" data-show-toggle="true" data-show-columns="true" data-search="true" data-select-item-name="toolbar1" data-pagination="true" data-sort-name="name" data-sort-order="desc">
@@ -106,7 +106,7 @@ include_once('contents_sidebar.php');
 										$total += 1;
 										echo "<tr>";
 											$name = $total ;hd_tbody_td($num,$name);$num+=1;
-											$name = $info['project'] ;	hd_tbody_td($num,$name);$num+=1;
+											$name = "<a href='/BOIN_PLANNING/01.jira/project_main.php?project=".$info['project']."'>".$info['project']."</a>" ;	hd_tbody_td($num,$name);$num+=1;
 											$temp = floor($info['cnt_close']/$info['total']*1000)/10;
 											$name = $temp."%" ;	hd_tbody_td($num,$name);$num+=1;
 											

@@ -59,7 +59,7 @@ if($info==Null) {
 			where admin_id ='".$admin_id."';";
 			$res	=  mysqli_query($real_sock,$sql) or die(mysqli_error($real_sock));
 
-			
+	
 			
 			echo "<script>
 				alert('환영합니다.');
@@ -69,11 +69,13 @@ if($info==Null) {
 
 
 	}else {
+		
 	
 			echo "<script>
 			alert('비밀번호를 확인하세요. ');
 			parent.location.replace('/BOIN_PLANNING/');
 			</script> ";
+			
 		
 	}
 

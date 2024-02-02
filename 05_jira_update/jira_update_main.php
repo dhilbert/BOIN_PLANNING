@@ -8,7 +8,7 @@ include_once('../lib/dbcon_BOIN_PLANNING.php');
 
 
 
-function cute_hh_string($value){
+function cute_es_string($value){
 	$value = str_replace("'", "\'",$value);
 	$value = str_replace('"', '\"',$value);
 	$value = " ".$value." ";
@@ -21,7 +21,7 @@ function cute_hh_string($value){
 
 
 $url = 'https://boinplanning.atlassian.net/rest/api/latest/search?fields=key&maxResults=10000';
-$url_resss = cute_hh_curl($username,$password,$url);
+$url_resss = cute_es_curl($username,$password,$url);
 $url_ress = $url_resss['issues'];
 
 for($jira_i = 0 ; $jira_i <count($url_ress); $jira_i++ ){

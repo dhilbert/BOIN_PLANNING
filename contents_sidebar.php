@@ -72,14 +72,17 @@ function hd_drop($num,$grobal,$sub_name,$sub_url){
 			$num		='hq-05';
 			$grobal		= '지라관리(공사중)';
 			$sub_name	= array('동기화(공사중)','전체 카드 확인','업무시간분석','주간보고');
-			/*$sub_url	= array("/BOIN_PLANNING/05_jira_update/jira_update_main.php",
+			$sub_url	= array("/BOIN_PLANNING/05_jira_update/jira_update_main.php",
 			 					"/BOIN_PLANNING/05_jira_update/jira_update_main_date.php",
 								"/BOIN_PLANNING/02_weekreport/01_setting.php"
 							
 							
 							);
 			
-			*/
+			
+			
+			
+			/*
 			$sub_url	= array("#",
 					"/BOIN_PLANNING/01.jira/01_jira_main.php",
 					"/BOIN_PLANNING/01.jira/02_jira_main.php",
@@ -88,7 +91,7 @@ function hd_drop($num,$grobal,$sub_name,$sub_url){
 							
 							
 							);
-
+			*/
 			hd_drop($num,$grobal,$sub_name,$sub_url);
 
 

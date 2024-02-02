@@ -18,7 +18,7 @@ $info	 = mysqli_fetch_array($res);
 $url = "https://mz-dev.atlassian.net/rest/api/latest/search?jql=updated>=".$info['jirasync_update_date']."&fields=key&maxResults=10000";
 
 
-$ress=cute_hh_curl($username,$password,$url);
+$ress=cute_es_curl($username,$password,$url);
 
 ?>
 
@@ -112,7 +112,7 @@ for($i = 0 ; $i <count($ress['issues']); $i++){
 
 
 	//?fields=id,key,summary
-	$sub_ress=sub_cute_hh_curl($username,$password,$url);
+	$sub_ress=sub_cute_es_curl($username,$password,$url);
 
 	
 	
@@ -245,7 +245,7 @@ for($i = 0 ; $i <count($ress['issues']); $i++){
 	
 		$work_url = "https://mz-dev.atlassian.net/rest/api/2/issue/".$temps_list['key']."/worklog/?maxResults=10000";
 		
-		$work_ress=sub_cute_hh_curl($username,$password,$work_url);
+		$work_ress=sub_cute_es_curl($username,$password,$work_url);
 		
 		
 		$work_sql = "INSERT INTO jirasync_work(jmi_inx,jmi_key,jmi_work_name,jmi_work_id,started,created,updated,timeSpent,timeSpentSeconds,comment)	VALUES";

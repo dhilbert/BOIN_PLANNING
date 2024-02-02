@@ -73,7 +73,9 @@ $username = "boinplanning@gmail.com";
 $password = "ATATT3xFfGF07xWDfeB18MJNOp8xvsFwOgE9_5cGWF5hkFsxEqnsw5HcrrmoapwxWOjybyy-9oGcxNzKXrSc1Q5S6s0-Z_K1SIQrURHxPO7ytkn51XydbjWyOLlFnYDlsJuMKSFottuZ-aVG4W7lOm9ohSCAAr0WCoAm-H0_gx8awNV59pFvK8s=B60FF3E2";
 $password = "ATATT3xFfGF0O8BkX7fOw9ht002V-L_UPskJHoD8Ja-PRfaqGWWKGQJGaPVgnIuHXsL_1eRyGnPMf6meX-OOe3uekrS7nvE9Bo88m4GeDJAwjwta5wijvmb-IbbikrZVRoWKmeUEAyzwDYXWu8Th-l7VUy23pxS20a22xjNy_61p5jctUkuv2Tc=2B4718AD";
 $password = "ATATT3xFfGF0UJJDcwHilTLM5aZ8ghwyTDZVc-ZQZUfG_jYwDUZsAQ62e74V2hK67AyD8XZ0NmTHXamSSwsyc6UBxhu64FVTFcCQC_ZcR_qJwLsWyGme3NItxVZhyqYNg3B3BMYCh7PdnF8ecG_0XR-FqIEY--40_Npr_uA9aUFv-oR28ecQMNM=528CB5F2";
-function cute_hh_curl($username,$password,$url){
+$password = "ATATT3xFfGF0CXOLYcPHyNSlKb6RsOvjjLdiOR-ndG12zh_uKKEikXlmqJ_sfdnC3gFVJAReFE1Dw2KnXUMa6H3OlC9Epo0kvjdhoLyR-5XbwxtC7c81oMImqle6HF7BjaIbwl8kNSNEHb5iBj1HPIAuDwRaBS3aVOTsmid3BdZ2ztZ2sLvI7bI=2A7206A2";
+
+function cute_es_curl($username,$password,$url){
 
 	$curl = curl_init();
 	curl_setopt($curl, CURLOPT_USERPWD, "$username:$password");
@@ -96,7 +98,7 @@ function cute_jy_work_kind($comments){
 }
 
 
-function sub_cute_hh_curl($username,$password,$url){
+function sub_cute_es_curl($username,$password,$url){
 
 	$sub_curl = curl_init();
 	curl_setopt($sub_curl, CURLOPT_USERPWD, "$username:$password");
